@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head lang="fr-fr">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+    <title>Trouver des problèmes de performances</title>
+    <link rel="canonical" href="http://lavoweb.net/post/diagnostic-performance/">
+    <meta property="og:url" content="http://lavoweb.net/">
+    <meta property="og:title" content="Trouver des problèmes de performances">
+    <meta property="og:image" content="http://lavoweb.net/images/referencement_magento_grand.png">
+    <meta name="apple-mobile-web-app-title" content="Trouver des problèmes de performances">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://lavoweb.net/images/favicon_referencement_magento.png">
+    <link rel="icon" type="image/x-icon" href="http://lavoweb.net/images/favicon_referencement_magento.png">
+
+    <style>
+        @font-face {
+            font-family: 'Icon';
+            src: url('http://lavoweb.net/fonts/icon.eot');
+            src: url('http://lavoweb.net/fonts/icon.eot') format('embedded-opentype'),
+            url('http://lavoweb.net/fonts/icon.woff') format('woff'),
+            url('http://lavoweb.net/fonts/icon.ttf') format('truetype'),
+            url('http://lavoweb.net/fonts/icon.svg') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+
+    <link rel="stylesheet" href="http://lavoweb.net/stylesheets/application.css">
+    <link rel="stylesheet" href="http://lavoweb.net/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://lavoweb.net/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://lavoweb.net/stylesheets/highlight/highlight.css">
+
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+    <style>
+        body, input {
+            font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+
+        pre, code {
+            font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+    </style>
+
+
+    <script src="http://lavoweb.net/javascripts/modernizr.js"></script>
+
+    
+    <meta name="generator" content="Hugo 0.38-DEV" />
+
+</head>
+<body class="palette-primary-red palette-accent-teal">
+
+
+<div class="backdrop">
+    <div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+    <nav aria-label="Header">
+        <div class="bar default">
+            <div class="button button-menu" role="button" aria-label="Menu">
+                <label class="toggle-button icon icon-menu" for="toggle-drawer">
+                    <span></span>
+                </label>
+            </div>
+            <div class="stretch">
+                <div class="title">
+                    Agence Web Magento - LavoWeb
+                </div>
+            </div>
+
+
+            <div class="button button-twitter" role="button" aria-label="Twitter">
+                <a href="https://twitter.com/LavoWeb" title="@LavoWeb on Twitter" target="_blank"
+                   class="toggle-button icon icon-twitter"></a>
+            </div>
+
+
+            <div class="button button-github" role="button" aria-label="GitHub">
+                <a href="https://github.com/LavoWeb" title="@LavoWeb on GitHub" target="_blank"
+                   class="toggle-button icon icon-github"></a>
+            </div>
+
+
+        </div>
+        <div class="bar search">
+            <div class="button button-close" role="button" aria-label="Close">
+                <label class="toggle-button icon icon-back" for="toggle-search"></label>
+            </div>
+            <div class="stretch">
+                <div class="field">
+                    <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off"
+                           autocomplete="off" spellcheck>
+                </div>
+            </div>
+            <div class="button button-reset" role="button" aria-label="Search">
+                <button class="toggle-button icon icon-close" id="reset-search"></button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="drawer">
+        <nav aria-label="Navigation">
+            <a href="http://lavoweb.net/" class="project">
+                <div class="banner">
+
+                    <div class="logo">
+                        <img src="http://lavoweb.net/images/developpement-magento.png">
+                    </div>
+
+                    <div class="name">
+                        <strong>Agence Web Magento - LavoWeb </strong>
+
+                    </div>
+                </div>
+            </a>
+
+            <div class="scrollable">
+                <div class="wrapper">
+
+
+                    <div class="toc">
+                        <ul>
+    <li>
+        
+        <a  title="Agence Web" href="http://lavoweb.net/">
+            Agence Web
+        </a>
+        
+    </li>
+    <li>
+        
+        <a  title="Développement Magento" href="http://lavoweb.net/developpement/">
+            Développement Magento
+        </a>
+        
+    </li>
+    <li>
+        
+        <a  title="Hébergement Magento" href="http://lavoweb.net/hebergement/">
+            Hébergement Magento
+        </a>
+        
+    </li>
+    <li>
+        
+        <a  title="Hébergement Magento" href="http://lavoweb.net/referencement/">
+            Référencement e-commerce
+        </a>
+        
+    </li>
+    <li>
+        
+        
+        <a class="current" title="Articles" href="http://lavoweb.net/post/">
+            Articles
+        </a>
+        
+            <ul id="scrollspy"></ul>
+        
+    </li>
+</ul>
+                        <hr>
+                        <span class="section">L'entreprise</span>
+
+                        <ul>
+
+                            <li>
+                                <a href="https:// twitter.com/LavoWeb" target="_blank" title="@LavoWeb on Twitter">
+                                    @LavoWeb sur Twitter
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="https://github.com/LavoWeb" target="_blank" title="@LavoWeb on GitHub">
+                                    @LavoWeb sur GitHub
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="mailto:aurelien@lavoweb.net" title="Email of aurelien@lavoweb.net">
+                                    Contacter via email
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <article class="article">
+        <div class="wrapper">
+	<div class="section section-content" id="section-content">
+		<div class="title-block">
+			<h1 class="title-big">Trouver des problèmes de performances</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 about-info">
+					
+
+<p>On dit parfois que Magento est lent, je ne pense pas. Si on respecte les bonnes pratiques, c’est plutôt rapide, il suffit de voir les sites des grands acteurs du e-commerce pour s’en rendre compte. Aujourd’hui on va parler d’un outil tout simple qui nous permettra de savoir ce qui rend le site lent.</p>
+
+<p>C’est peut-être une requête SQL où il manque un index, une collection chargée sans filtre, une boucle non optimisée ou pleins d’autres choses encore. On va parler de l’outil linux strace. Je l’ai découvert en ayant à analyser des boucles infinis sur un site.</p>
+
+<p>Strace log tout simplement tous les appels systèmes. C’est très verbeux mais ça permets d’identifier facilement ce qui ne vas pas sur une appli.</p>
+
+<p>Voici comment l’utiliser pour débugger une application PHP.</p>
+
+<h2 id="écouter-le-processus-apache2">Écouter le processus Apache2</h2>
+
+<p>Si on utilise Apache avec PHP en mode CLI, il faut monitorer apache. Si on utilise PHP-FPM ou autre, il faudra monitorer le processus PHP.</p>
+
+<pre><code>strace -t -s 256 apache2 -X
+</code></pre>
+
+<p>On lance donc la commande strace avec l’option -t (afficher l’heure), s (pour limiter le nombre de caractère par ligne à 256 – c’est le minimum pour voir les requêtes SQL). Ensuite on lance apache en mode CLI et non en mode daemon, ce qui permets de ne pas « perdre » le processus.</p>
+
+<p>Ensuite on visite la page qui nous intéresse et on verra tous les appels systèmes. Il ne nous reste lus qu’a trier ceux qui prennent le plus de temps (avec Excel par exemple) et à optimiser :)</p>
+
+<p>Pour terminer le processus, un CTRL+C ne suffit pas, il faut killer le processus :</p>
+
+<pre><code>ps aux |grep apache2
+
+</code></pre>
+
+<blockquote>
+<p>ncyuser  31836  2.8  2.7 389412 112556 pts/10  R+   10:25   0:04 apache2 -X</p>
+</blockquote>
+
+<pre><code>kill -9 31836
+</code></pre>
+
+<p>Le -9 est obligatoire dans ce cas !</p>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 about-info">
+					
+					
+					<h3>Voir</h3>
+					<ul>
+						
+						<li><a href="http://lavoweb.net/post/cdn/">Réduire la charge serveur grâce à un CDN</a></li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<aside class="copyright" role="note">
+
+	&copy; 2018
+
+</aside>
+
+<footer class="footer">
+	<div>
+		<p>Agence Web sur Annecy, Bourget-du-Lac, Chambéry et <a href="https://lumao.eu/">Genève</a>. 835 305 657 R.C.S. ANNECY</p>
+	</div>
+</footer>
+</div>
+</article>
+
+<div class="results" role="status" aria-live="polite">
+	<div class="scrollable">
+		<div class="wrapper">
+			<div class="meta"></div>
+			<div class="list"></div>
+		</div>
+	</div>
+</div>
+</main>
+
+<script>
+
+    var base_url = '';
+    var repo_id  = '';
+
+</script>
+
+<script src="http://lavoweb.net/javascripts/application.js"></script>
+
+
+<script>
+     
+    var headers   = document.getElementsByTagName("h2");
+    var scrollspy = document.getElementById('scrollspy');
+
+    if(scrollspy) {
+        if(headers.length > 0) {
+            for(var i = 0; i < headers.length; i++) {
+                var li = document.createElement("li");
+                li.setAttribute("class", "anchor");
+
+                var a  = document.createElement("a");
+                a.setAttribute("href", "#" + headers[i].id);
+                a.setAttribute("title", headers[i].innerHTML);
+                a.innerHTML = headers[i].innerHTML;
+
+                li.appendChild(a)
+                scrollspy.appendChild(li);
+            }
+        } else {
+            scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+         
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+    }
+</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</html>
+

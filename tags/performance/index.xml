@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Performance on Agence Web Magento - LavoWeb</title>
+    <link>http://lavoweb.net/tags/performance/</link>
+    <description>Recent content in Performance on Agence Web Magento - LavoWeb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 24 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://lavoweb.net/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Trouver des problèmes de performances</title>
+      <link>http://lavoweb.net/post/diagnostic-performance/</link>
+      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/diagnostic-performance/</guid>
+      <description>On dit parfois que Magento est lent, je ne pense pas. Si on respecte les bonnes pratiques, c’est plutôt rapide, il suffit de voir les sites des grands acteurs du e-commerce pour s’en rendre compte. Aujourd’hui on va parler d’un outil tout simple qui nous permettra de savoir ce qui rend le site lent.
+C’est peut-être une requête SQL où il manque un index, une collection chargée sans filtre, une boucle non optimisée ou pleins d’autres choses encore.</description>
+    </item>
+    
+    <item>
+      <title>Réduire la charge serveur grâce à un CDN</title>
+      <link>http://lavoweb.net/post/cdn/</link>
+      <pubDate>Mon, 06 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/cdn/</guid>
+      <description>Un des problèmes récurrent quand on commence à acquérir un peu de trafic grâce au référencement naturel est qu’il faut assez rapidement utiliser des serveurs un peu plus puissant. Malheureusement ça chiffre assez vite car il faut souvent installer un nouveau serveur, le configurer, vérifier que ça ne cause pas de problème en plus…
+Si on regarde un peu plus en détail la charge serveur, on remarque souvent que si le trafic double, la charge peut être multipliée par cent !</description>
+    </item>
+    
+  </channel>
+</rss>
