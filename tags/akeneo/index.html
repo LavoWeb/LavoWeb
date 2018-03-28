@@ -1,9 +1,318 @@
-<!DOCTYPE html><html class=no-js lang=fr-fr><head lang=fr-fr><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><meta http-equiv=X-UA-Compatible content="IE=10"><title>Akeneo</title><link rel=canonical href="http://lavoweb.net/tags/akeneo/"><meta property=og:url content="http://lavoweb.net/"><meta property=og:title content=Akeneo><meta property=og:image content=http://lavoweb.net/images/referencement_magento_grand.png><meta name=apple-mobile-web-app-title content=Akeneo><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black-translucent><link rel="shortcut icon" type=image/x-icon href=http://lavoweb.net/favicon_referencement_magento.png><link rel=icon type=image/x-icon href=http://lavoweb.net/favicon_referencement_magento.png><link rel=stylesheet href=http://lavoweb.net/stylesheets/style.min.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono"><link href=http://lavoweb.net/tags/akeneo/index.xml rel=feed type=application/rss+xml title="Agence Web Magento - LavoWeb"><meta name=generator content="Hugo 0.38-DEV"></head><body class="palette-primary-red palette-accent-teal"><div class=backdrop><div class=backdrop-paper></div></div><input class=toggle type=checkbox id=toggle-drawer> <label class="toggle-button overlay" for=toggle-drawer></label><header class=header><nav aria-label=Header><div class="bar default"><div class="button button-menu" role=button aria-label=Menu><label class="toggle-button icon icon-menu" for=toggle-drawer><span></span></label></div><div class=stretch><div class=title>Agence Web Magento - LavoWeb</div></div><div class="button button-twitter" role=button aria-label=Twitter><a href=https://twitter.com/LavoWeb title="@LavoWeb on Twitter" target=_blank class="toggle-button icon icon-twitter"></a></div><div class="button button-github" role=button aria-label=GitHub><a href=https://github.com/LavoWeb title="@LavoWeb on GitHub" target=_blank class="toggle-button icon icon-github"></a></div></div></nav></header><main class=main><div class=drawer><nav aria-label=Navigation><a href="http://lavoweb.net/" class=project><div class=banner><div class=logo><img src=http://lavoweb.net/images/developpement-magento.png alt="Agence Magento"></div><div class=name><strong>Agence Web Magento - LavoWeb</strong></div></div></a><div class=scrollable><div class=wrapper><div class=toc><ul><li><a title="Agence Web" href="http://lavoweb.net/">Agence Web</a></li><li><a title="Développement Magento" href="http://lavoweb.net/developpement/">Développement Magento</a></li><li><a title="Hébergement Magento" href="http://lavoweb.net/hebergement/">Hébergement Magento</a></li><li><a title="Hébergement Magento" href="http://lavoweb.net/referencement/">Référencement e-commerce</a></li><li><a title=Articles href="http://lavoweb.net/post/">Articles</a></li></ul><hr><span class=section>L'entreprise</span><ul><li><a href=mailto:aurelien@lavoweb.net title="Email of aurelien@lavoweb.net">Contacter via email</a></li></ul></div></div></div></nav></div><article class=article><div class=wrapper><div class="container section"><div class=section-about><article><h2><a href="http://lavoweb.net/post/magento-composer/">Créer un module Magento disponible avec Composer</a></h2><div>Créer un repo Créer le module Ajout composer.json Génération modman curl -sS https://raw.githubusercontent.com/mhauri/generate-modman/master/generate-modman &gt; generate-modman sudo mv generate-modman /usr/local/bin sudo chmod 755 /usr/local/bin/generate-modman /usr/local/bin/generate-modman git add modman créer release dans github repo/releases/new créer hook packagist repo/settings/hooks/new?service=packagist trouver le token ici : https://packagist.org/profile/ Ajouter le package dans packagist : https://packagist.org/packages/submit Ajouter le package dans satis perso</div></article></div><div class=section-about><article><h2><a href="http://lavoweb.net/post/acces-serveur/">Gérer ses accès serveurs</a></h2><div>Quand on commence à avoir beaucoup de serveurs à gérer, il devient urgent d’avoir une bonne politique pour gérer les connexions. C’est compliqué de retenir x mots de passe donc il devient tentant de mettre plusieurs fois le même. Les clés ssh avec une bonne configuration sont ont bonne solution à ce problème. Générer une clé SSH ssh-keygen -t dsa Une bonne pratique est de mettre son email en commentaire de la clé publique, ça permets de savoir plus facilement qui a accès à quoi. <a href="http://lavoweb.net/post/acces-serveur/">Lire la suite...</a></div></article></div><div class=section-about><article><h2><a href="http://lavoweb.net/post/m2-developpeur/">Magento2 : Mode développeur</a></h2><div>Magento 2 propose de base un système de cache assez poussé. Ce qui est génial pour les performances en production mais un peu moins quand on cherche à développer de nouvelles fonctionnalités. Voici ce qu’on peut faire pour améliorer notre productivité : bin/magento deploy:mode:set developer bin/magento cache:disable layout block_html full_page rm -Rf var/view_preprocessed/* pub/static/frontend/* var/cache/mage-* var/page_cache/mage-* Avant la mise en prod, on oublie pas de faire ceci : bin/magento deploy:mode:set production bin/magento cache:enable layout block_html full_page</div></article></div><div class=section-about><article><h2><a href="http://lavoweb.net/post/diagnostic-performance/">Trouver des problèmes de performances</a></h2><div>On dit parfois que Magento est lent, je ne pense pas. Si on respecte les bonnes pratiques, c’est plutôt rapide, il suffit de voir les sites des grands acteurs du e-commerce pour s’en rendre compte. Aujourd’hui on va parler d’un outil tout simple qui nous permettra de savoir ce qui rend le site lent. C’est peut-être une requête SQL où il manque un index, une collection chargée sans filtre, une boucle non optimisée ou pleins d’autres choses encore. <a href="http://lavoweb.net/post/diagnostic-performance/">Lire la suite...</a></div></article></div><div class=section-about><article><h2><a href="http://lavoweb.net/post/trafic-youtube/">Davantage de trafic grâce à Youtube</a></h2><div>Youtube est la référence incontournable en matière de vidéos sur le web. Il est important et utile d’avoir une présence convaincante et établie de façon judicieuse sur la plateforme en question pour bénéficier de ce trafic potentiel et en envoyer une petite partie sur son propre site. Pour vous aider à atteindre ce but, j’ai décidé de vous expliquer comment créer une bonne chaîne Youtube. Les différentes étapes sont décrites de façon très simple et concrète. <a href="http://lavoweb.net/post/trafic-youtube/">Lire la suite...</a></div></article></div><div class=section-about><article><h2><a href="http://lavoweb.net/post/migration-prestashop/">Migration Prestashop vers Magento</a></h2><div>Plus on utilise une solution et plus on voit ces faiblesses. Ce n’est pas pour rien que Magento est le CMS e-commerce le plus utilisé sur les boutiques avec un chiffre d’affaire important. Nous pouvons vous accompagner durant votre migration. Nous pouvons faire une migration depuis n’importe quel CMS, certains demandent juste plus de temps. Voici les données que nous migrons actuellement : Le catalogue (produits, catégories, prix &amp; stocks) <a href="http://lavoweb.net/post/migration-prestashop/">Lire la suite...</a></div></article></div><div class=section-about><article><h2><a href="http://lavoweb.net/post/w3c/">Les enjeux de la normalisation W3C pour votre e-commerce</a></h2><div>Lorsque l’on développe un site web et/ou un e-commerce, on utilise certains langages Web tels que HTML, CSS. Ces langages reposent sur des normes et standards. Qu’es ce que le W3C ? Le W3C (World Wide Web Consortium), est une structure internationale qui développe des standards pour le Web afin de développer une communication commune. Ces standards fonctionnent avec des formats dits ouverts afin d’optimiser la compréhension des systèmes hétérogènes. <a href="http://lavoweb.net/post/w3c/">Lire la suite...</a></div></article></div><div class=section-about><article><h2><a href="http://lavoweb.net/post/installer-akeneo/">Installer Akeneo</a></h2><div>Un article très court pour installer Akeno, un PIM qui fait parler de lui ! Installation du PIM sudo -u www-data composer create-project –prefer-dist akeneo/pim-community-standard ./akeneo-dedi « 1.2.*@stable » cd ./akeneo-dedi sudo -u www-data composer install sudo -u www-data app/console pim:install sudo -u www-data app/console cache:clear sudo -u www-data rm -f web/install.php Installation du connecteur Magento sudo apt-get install libssh2-php sudo -u www-data composer require akeneo/magento-connector-bundle:1.2.* sudo -u www-data composer config repositories. <a href="http://lavoweb.net/post/installer-akeneo/">Lire la suite...</a></div></article></div><div class=section-about><article><h2><a href="http://lavoweb.net/post/ce-ee/">Comment décider entre Magento CE (open-source) et EE (version payante) ?</a></h2><div>Cet article est une traduction de l’excellent article de Customer Paradigm, notre interprétation étant personnelle, si vous comprenez bien l’anglais, je vous conseilles de lire l’article original. Tout d’abord, et article a été inspiré de la vidéo ci-dessous. Vous pouvez activer les sous-titres si besoin. Un expert Magento peut vous aider à décider quelle version est adaptée pour votre entreprise. Comment choisir entre la version payante (15550 dollars, soit aux alentours de 11 000 euros) de Magento Enterprise et la version gratuite Community ? <a href="http://lavoweb.net/post/ce-ee/">Lire la suite...</a></div></article></div><div class=section-about><article><h2><a href="http://lavoweb.net/post/forcer-url/">Forcer « nouvelles » URL</a></h2><div>Quand on a une boutique Magento depuis un bon moment, il arrive souvent que les urls du site aient changé quelques fois depuis l’ouverture du site. On navigue donc avec les « mauvaises » (ou anciennes) urls ce qui entraîne une redirection à chaque clic. Le visiteur ou le moteur de recherche perd donc du temps ce qui peut entraîner une baisse du taux de conversion ou une moins bonne indexation de votre e-commerce. <a href="http://lavoweb.net/post/forcer-url/">Lire la suite...</a></div></article></div><div class=pagination>1 sur 3 <a href="http://lavoweb.net/tags/akeneo/page/2/">Page suivante</a></div></div><aside class=copyright role=note>&copy; 2018</aside><footer class=footer><div><p>Agence Web sur Annecy, Bourget-du-Lac, Chambéry et <a href="https://lumao.eu/">Genève</a>. 835 305 657 R.C.S. ANNECY</p></div></footer></div></article><div class=results role=status aria-live=polite><div class=scrollable><div class=wrapper><div class=meta></div><div class=list></div></div></div></div></main><script>
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+<head lang="fr-fr">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+    <title>Akeneo</title>
+    <link rel="canonical" href="http://lavoweb.net/tags/akeneo/">
+    <meta property="og:url" content="http://lavoweb.net/">
+    <meta property="og:title" content="Akeneo">
+    <meta property="og:image" content="http://lavoweb.net/images/referencement_magento_grand.png">
+    <meta name="apple-mobile-web-app-title" content="Akeneo">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://lavoweb.net/favicon_referencement_magento.png">
+    <link rel="icon" type="image/x-icon" href="http://lavoweb.net/favicon_referencement_magento.png">
+
+    <link rel="stylesheet" href="http://lavoweb.net/stylesheets/style.min.css">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+
+    <link href="http://lavoweb.net/tags/akeneo/index.xml" rel="feed" type="application/rss+xml" title="Agence Web Magento - LavoWeb">
+    <meta name="generator" content="Hugo 0.38-DEV" />
+
+</head>
+<body class="palette-primary-red palette-accent-teal">
+
+
+<div class="backdrop">
+    <div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+    <nav aria-label="Header">
+        <div class="bar default">
+            <div class="button button-menu" role="button" aria-label="Menu">
+                <label class="toggle-button icon icon-menu" for="toggle-drawer">
+                    <span></span>
+                </label>
+            </div>
+            <div class="stretch">
+                <div class="title">
+                    Agence Web Magento - LavoWeb
+                </div>
+            </div>
+
+
+            <div class="button button-twitter" role="button" aria-label="Twitter">
+                <a href="https://twitter.com/LavoWeb" title="@LavoWeb on Twitter" target="_blank"
+                   class="toggle-button icon icon-twitter"></a>
+            </div>
+
+
+            <div class="button button-github" role="button" aria-label="GitHub">
+                <a href="https://github.com/LavoWeb" title="@LavoWeb on GitHub" target="_blank"
+                   class="toggle-button icon icon-github"></a>
+            </div>
+
+
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="drawer">
+        <nav aria-label="Navigation">
+            <a href="http://lavoweb.net/" class="project">
+                <div class="banner">
+
+                    <div class="logo">
+                        <img src="http://lavoweb.net/images/developpement-magento.png" alt="Agence Magento" />
+                    </div>
+
+                    <div class="name">
+                        <strong>Agence Web Magento - LavoWeb </strong>
+
+                    </div>
+                </div>
+            </a>
+
+            <div class="scrollable">
+                <div class="wrapper">
+
+
+                    <div class="toc">
+                        <ul>
+    <li>
+        
+        <a  title="Agence Web" href="http://lavoweb.net/">
+            Agence Web
+        </a>
+        
+    </li>
+    <li>
+        
+        <a  title="Développement Magento" href="http://lavoweb.net/developpement/">
+            Développement Magento
+        </a>
+        
+    </li>
+    <li>
+        
+        <a  title="Hébergement Magento" href="http://lavoweb.net/hebergement/">
+            Hébergement Magento
+        </a>
+        
+    </li>
+    <li>
+        
+        <a  title="Hébergement Magento" href="http://lavoweb.net/referencement/">
+            Référencement e-commerce
+        </a>
+        
+    </li>
+    <li>
+        
+        
+        <a  title="Articles" href="http://lavoweb.net/post/">
+            Articles
+        </a>
+        
+    </li>
+</ul>
+                        <hr>
+                        <span class="section">L'entreprise</span>
+
+                        <ul>
+
+                            <li>
+                                <a href="mailto:aurelien@lavoweb.net" title="Email of aurelien@lavoweb.net">
+                                    Contacter via email
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <article class="article">
+        <div class="wrapper">
+	<div class="container section">
+		
+		
+			<div class="section-about">	<article>
+		<h2><a href="http://lavoweb.net/post/magento-composer/">Créer un module Magento disponible avec Composer</a></h2>
+		<div>
+			Créer un repo
+Créer le module
+Ajout composer.json
+Génération modman
+curl -sS https://raw.githubusercontent.com/mhauri/generate-modman/master/generate-modman &gt; generate-modman sudo mv generate-modman /usr/local/bin sudo chmod 755 /usr/local/bin/generate-modman /usr/local/bin/generate-modman git add modman  créer release dans github repo/releases/new
+créer hook packagist repo/settings/hooks/new?service=packagist
+trouver le token ici : https://packagist.org/profile/
+Ajouter le package dans packagist : https://packagist.org/packages/submit
+Ajouter le package dans satis perso
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
+		<h2><a href="http://lavoweb.net/post/acces-serveur/">Gérer ses accès serveurs</a></h2>
+		<div>
+			Quand on commence à avoir beaucoup de serveurs à gérer, il devient urgent d’avoir une bonne politique pour gérer les connexions. C’est compliqué de retenir x mots de passe donc il devient tentant de mettre plusieurs fois le même. Les clés ssh avec une bonne configuration sont ont bonne solution à ce problème.
+Générer une clé SSH ssh-keygen -t dsa  Une bonne pratique est de mettre son email en commentaire de la clé publique, ça permets de savoir plus facilement qui a accès à quoi.
+			
+				<a href="http://lavoweb.net/post/acces-serveur/">Lire la suite...</a>
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
+		<h2><a href="http://lavoweb.net/post/m2-developpeur/">Magento2 : Mode développeur</a></h2>
+		<div>
+			Magento 2 propose de base un système de cache assez poussé. Ce qui est génial pour les performances en production mais un peu moins quand on cherche à développer de nouvelles fonctionnalités.
+Voici ce qu’on peut faire pour améliorer notre productivité :
+bin/magento deploy:mode:set developer bin/magento cache:disable layout block_html full_page rm -Rf var/view_preprocessed/* pub/static/frontend/* var/cache/mage-* var/page_cache/mage-*  Avant la mise en prod, on oublie pas de faire ceci :
+bin/magento deploy:mode:set production bin/magento cache:enable layout block_html full_page  
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
+		<h2><a href="http://lavoweb.net/post/diagnostic-performance/">Trouver des problèmes de performances</a></h2>
+		<div>
+			On dit parfois que Magento est lent, je ne pense pas. Si on respecte les bonnes pratiques, c’est plutôt rapide, il suffit de voir les sites des grands acteurs du e-commerce pour s’en rendre compte. Aujourd’hui on va parler d’un outil tout simple qui nous permettra de savoir ce qui rend le site lent.
+C’est peut-être une requête SQL où il manque un index, une collection chargée sans filtre, une boucle non optimisée ou pleins d’autres choses encore.
+			
+				<a href="http://lavoweb.net/post/diagnostic-performance/">Lire la suite...</a>
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
+		<h2><a href="http://lavoweb.net/post/trafic-youtube/">Davantage de trafic grâce à Youtube</a></h2>
+		<div>
+			Youtube est la référence incontournable en matière de vidéos sur le web. Il est important et utile d’avoir une présence convaincante et établie de façon judicieuse sur la plateforme en question pour bénéficier de ce trafic potentiel et en envoyer une petite partie sur son propre site.
+Pour vous aider à atteindre ce but, j’ai décidé de vous expliquer comment créer une bonne chaîne Youtube.
+Les différentes étapes sont décrites de façon très simple et concrète.
+			
+				<a href="http://lavoweb.net/post/trafic-youtube/">Lire la suite...</a>
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
+		<h2><a href="http://lavoweb.net/post/migration-prestashop/">Migration Prestashop vers Magento</a></h2>
+		<div>
+			Plus on utilise une solution et plus on voit ces faiblesses. Ce n’est pas pour rien que Magento est le CMS e-commerce le plus utilisé sur les boutiques avec un chiffre d’affaire important. Nous pouvons vous accompagner durant votre migration.
+Nous pouvons faire une migration depuis n’importe quel CMS, certains demandent juste plus de temps. Voici les données que nous migrons actuellement :
+ Le catalogue (produits, catégories, prix &amp; stocks)
+			
+				<a href="http://lavoweb.net/post/migration-prestashop/">Lire la suite...</a>
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
+		<h2><a href="http://lavoweb.net/post/w3c/">Les enjeux de la normalisation W3C pour votre e-commerce</a></h2>
+		<div>
+			Lorsque l’on développe un site web et/ou un e-commerce, on utilise certains langages Web tels que HTML, CSS. Ces langages reposent sur des normes et standards.
+Qu’es ce que le W3C ? Le W3C (World Wide Web Consortium), est une structure internationale qui développe des standards pour le Web afin de développer une communication commune. Ces standards fonctionnent avec des formats dits ouverts afin d’optimiser la compréhension des systèmes hétérogènes.
+			
+				<a href="http://lavoweb.net/post/w3c/">Lire la suite...</a>
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
+		<h2><a href="http://lavoweb.net/post/installer-akeneo/">Installer Akeneo</a></h2>
+		<div>
+			Un article très court pour installer Akeno, un PIM qui fait parler de lui !
+Installation du PIM sudo -u www-data composer create-project –prefer-dist akeneo/pim-community-standard ./akeneo-dedi « 1.2.*@stable » cd ./akeneo-dedi sudo -u www-data composer install sudo -u www-data app/console pim:install sudo -u www-data app/console cache:clear sudo -u www-data rm -f web/install.php  Installation du connecteur Magento sudo apt-get install libssh2-php sudo -u www-data composer require akeneo/magento-connector-bundle:1.2.* sudo -u www-data composer config repositories.
+			
+				<a href="http://lavoweb.net/post/installer-akeneo/">Lire la suite...</a>
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
+		<h2><a href="http://lavoweb.net/post/ce-ee/">Comment décider entre Magento CE (open-source) et EE (version payante) ?</a></h2>
+		<div>
+			Cet article est une traduction de l’excellent article de Customer Paradigm, notre interprétation étant personnelle, si vous comprenez bien l’anglais, je vous conseilles de lire l’article original.
+Tout d’abord, et article a été inspiré de la vidéo ci-dessous. Vous pouvez activer les sous-titres si besoin.
+Un expert Magento peut vous aider à décider quelle version est adaptée pour votre entreprise.
+Comment choisir entre la version payante (15550 dollars, soit aux alentours de 11 000 euros) de Magento Enterprise et la version gratuite Community ?
+			
+				<a href="http://lavoweb.net/post/ce-ee/">Lire la suite...</a>
+			
+		</div>
+	</article></div>
+		
+			<div class="section-about">	<article>
+		<h2><a href="http://lavoweb.net/post/forcer-url/">Forcer « nouvelles » URL</a></h2>
+		<div>
+			Quand on a une boutique Magento depuis un bon moment, il arrive souvent que les urls du site aient changé quelques fois depuis l’ouverture du site. On navigue donc avec les « mauvaises » (ou anciennes) urls ce qui entraîne une redirection à chaque clic. Le visiteur ou le moteur de recherche perd donc du temps ce qui peut entraîner une baisse du taux de conversion ou une moins bonne indexation de votre e-commerce.
+			
+				<a href="http://lavoweb.net/post/forcer-url/">Lire la suite...</a>
+			
+		</div>
+	</article></div>
+		
+		<div class="pagination">
+
+1 sur 3
+
+	<a href="http://lavoweb.net/tags/akeneo/page/2/">Page suivante</a>
+
+</div>
+	</div>
+
+
+<aside class="copyright" role="note">
+
+	&copy; 2018
+
+</aside>
+
+<footer class="footer">
+	<div>
+		<p>Agence Web sur Annecy, Bourget-du-Lac, Chambéry et <a href="https://lumao.eu/">Genève</a>. 835 305 657 R.C.S. ANNECY</p>
+	</div>
+</footer>
+</div>
+</article>
+
+<div class="results" role="status" aria-live="polite">
+	<div class="scrollable">
+		<div class="wrapper">
+			<div class="meta"></div>
+			<div class="list"></div>
+		</div>
+	</div>
+</div>
+</main>
+
+<script>
 
     var base_url = '';
     var repo_id  = '';
 
-</script><script src=http://lavoweb.net/javascripts/scripts.min.js></script><script>
+</script>
+
+<script src="http://lavoweb.net/javascripts/scripts.min.js"></script>
+
+
+<script>
      
     var headers   = document.getElementsByTagName("h2");
     var scrollspy = document.getElementById('scrollspy');
@@ -39,4 +348,11 @@
             headers[i].appendChild(a);
         }
     }
-</script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script></body></html>
+</script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</html>
+

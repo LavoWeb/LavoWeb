@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version=2.0 xmlns:atom=http://www.w3.org/2005/Atom><channel><title>Ssh on Agence Web Magento - LavoWeb</title><link>http://lavoweb.net/tags/ssh/<description>Recent content in Ssh on Agence Web Magento - LavoWeb</description><generator>Hugo -- gohugo.io</generator><language>fr-fr</language><lastbuilddate>Sat, 24 Mar 2018 00:00:00 +0000</lastbuilddate><atom:link href=http://lavoweb.net/tags/ssh/index.xml rel=self type=application/rss+xml><item><title>Gérer ses accès serveurs</title><link>http://lavoweb.net/post/acces-serveur/<pubdate>Sat, 24 Mar 2018 00:00:00 +0000</pubdate><guid>http://lavoweb.net/post/acces-serveur/</guid><description>Quand on commence à avoir beaucoup de serveurs à gérer, il devient urgent d’avoir une bonne politique pour gérer les connexions. C’est compliqué de retenir x mots de passe donc il devient tentant de mettre plusieurs fois le même. Les clés ssh avec une bonne configuration sont ont bonne solution à ce problème. Générer une clé SSH ssh-keygen -t dsa Une bonne pratique est de mettre son email en commentaire de la clé publique, ça permets de savoir plus facilement qui a accès à quoi.</description></item></atom:link></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ssh on Agence Web Magento - LavoWeb</title>
+    <link>http://lavoweb.net/tags/ssh/</link>
+    <description>Recent content in Ssh on Agence Web Magento - LavoWeb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 24 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://lavoweb.net/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gérer ses accès serveurs</title>
+      <link>http://lavoweb.net/post/acces-serveur/</link>
+      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/acces-serveur/</guid>
+      <description>Quand on commence à avoir beaucoup de serveurs à gérer, il devient urgent d’avoir une bonne politique pour gérer les connexions. C’est compliqué de retenir x mots de passe donc il devient tentant de mettre plusieurs fois le même. Les clés ssh avec une bonne configuration sont ont bonne solution à ce problème.
+Générer une clé SSH ssh-keygen -t dsa  Une bonne pratique est de mettre son email en commentaire de la clé publique, ça permets de savoir plus facilement qui a accès à quoi.</description>
+    </item>
+    
+  </channel>
+</rss>

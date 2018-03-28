@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version=2.0 xmlns:atom=http://www.w3.org/2005/Atom><channel><title>Cdn on Agence Web Magento - LavoWeb</title><link>http://lavoweb.net/tags/cdn/<description>Recent content in Cdn on Agence Web Magento - LavoWeb</description><generator>Hugo -- gohugo.io</generator><language>fr-fr</language><lastbuilddate>Mon, 06 Oct 2014 00:00:00 +0000</lastbuilddate><atom:link href=http://lavoweb.net/tags/cdn/index.xml rel=self type=application/rss+xml><item><title>Réduire la charge serveur grâce à un CDN</title><link>http://lavoweb.net/post/cdn/<pubdate>Mon, 06 Oct 2014 00:00:00 +0000</pubdate><guid>http://lavoweb.net/post/cdn/</guid><description>Un des problèmes récurrent quand on commence à acquérir un peu de trafic grâce au référencement naturel est qu’il faut assez rapidement utiliser des serveurs un peu plus puissant. Malheureusement ça chiffre assez vite car il faut souvent installer un nouveau serveur, le configurer, vérifier que ça ne cause pas de problème en plus… Si on regarde un peu plus en détail la charge serveur, on remarque souvent que si le trafic double, la charge peut être multipliée par cent !</description></item></atom:link></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cdn on Agence Web Magento - LavoWeb</title>
+    <link>http://lavoweb.net/tags/cdn/</link>
+    <description>Recent content in Cdn on Agence Web Magento - LavoWeb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Mon, 06 Oct 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://lavoweb.net/tags/cdn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Réduire la charge serveur grâce à un CDN</title>
+      <link>http://lavoweb.net/post/cdn/</link>
+      <pubDate>Mon, 06 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/cdn/</guid>
+      <description>Un des problèmes récurrent quand on commence à acquérir un peu de trafic grâce au référencement naturel est qu’il faut assez rapidement utiliser des serveurs un peu plus puissant. Malheureusement ça chiffre assez vite car il faut souvent installer un nouveau serveur, le configurer, vérifier que ça ne cause pas de problème en plus…
+Si on regarde un peu plus en détail la charge serveur, on remarque souvent que si le trafic double, la charge peut être multipliée par cent !</description>
+    </item>
+    
+  </channel>
+</rss>

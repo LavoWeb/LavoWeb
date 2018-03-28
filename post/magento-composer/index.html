@@ -1,14 +1,244 @@
-<!DOCTYPE html><html class=no-js lang=fr-fr><head lang=fr-fr><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><meta http-equiv=X-UA-Compatible content="IE=10"><title>Créer un module Magento disponible avec Composer</title><link rel=canonical href="http://lavoweb.net/post/magento-composer/"><meta property=og:url content="http://lavoweb.net/"><meta property=og:title content="Créer un module Magento disponible avec Composer"><meta property=og:image content=http://lavoweb.net/images/referencement_magento_grand.png><meta name=apple-mobile-web-app-title content="Créer un module Magento disponible avec Composer"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black-translucent><link rel="shortcut icon" type=image/x-icon href=http://lavoweb.net/favicon_referencement_magento.png><link rel=icon type=image/x-icon href=http://lavoweb.net/favicon_referencement_magento.png><link rel=stylesheet href=http://lavoweb.net/stylesheets/style.min.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono"><meta name=generator content="Hugo 0.38-DEV"></head><body class="palette-primary-red palette-accent-teal"><div class=backdrop><div class=backdrop-paper></div></div><input class=toggle type=checkbox id=toggle-drawer> <label class="toggle-button overlay" for=toggle-drawer></label><header class=header><nav aria-label=Header><div class="bar default"><div class="button button-menu" role=button aria-label=Menu><label class="toggle-button icon icon-menu" for=toggle-drawer><span></span></label></div><div class=stretch><div class=title>Agence Web Magento - LavoWeb</div></div><div class="button button-twitter" role=button aria-label=Twitter><a href=https://twitter.com/LavoWeb title="@LavoWeb on Twitter" target=_blank class="toggle-button icon icon-twitter"></a></div><div class="button button-github" role=button aria-label=GitHub><a href=https://github.com/LavoWeb title="@LavoWeb on GitHub" target=_blank class="toggle-button icon icon-github"></a></div></div></nav></header><main class=main><div class=drawer><nav aria-label=Navigation><a href="http://lavoweb.net/" class=project><div class=banner><div class=logo><img src=http://lavoweb.net/images/developpement-magento.png alt="Agence Magento"></div><div class=name><strong>Agence Web Magento - LavoWeb</strong></div></div></a><div class=scrollable><div class=wrapper><div class=toc><ul><li><a title="Agence Web" href="http://lavoweb.net/">Agence Web</a></li><li><a title="Développement Magento" href="http://lavoweb.net/developpement/">Développement Magento</a></li><li><a title="Hébergement Magento" href="http://lavoweb.net/hebergement/">Hébergement Magento</a></li><li><a title="Hébergement Magento" href="http://lavoweb.net/referencement/">Référencement e-commerce</a></li><li><a class=current title=Articles href="http://lavoweb.net/post/">Articles</a><ul id=scrollspy></ul></li></ul><hr><span class=section>L'entreprise</span><ul><li><a href=mailto:aurelien@lavoweb.net title="Email of aurelien@lavoweb.net">Contacter via email</a></li></ul></div></div></div></nav></div><article class=article><div class=wrapper><div class="section section-content" id=section-content><div class=title-block><h1 class=title-big>Créer un module Magento disponible avec Composer</h1></div><div class=container><div class=row><div class="col-md-12 about-info"><p>Créer un repo</p><p>Créer le module</p><p>Ajout composer.json</p><p>Génération modman</p><pre><code>curl -sS https://raw.githubusercontent.com/mhauri/generate-modman/master/generate-modman &gt; generate-modman
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+<head lang="fr-fr">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+    <title>Créer un module Magento disponible avec Composer</title>
+    <link rel="canonical" href="http://lavoweb.net/post/magento-composer/">
+    <meta property="og:url" content="http://lavoweb.net/">
+    <meta property="og:title" content="Créer un module Magento disponible avec Composer">
+    <meta property="og:image" content="http://lavoweb.net/images/referencement_magento_grand.png">
+    <meta name="apple-mobile-web-app-title" content="Créer un module Magento disponible avec Composer">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://lavoweb.net/favicon_referencement_magento.png">
+    <link rel="icon" type="image/x-icon" href="http://lavoweb.net/favicon_referencement_magento.png">
+
+    <link rel="stylesheet" href="http://lavoweb.net/stylesheets/style.min.css">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+
+    
+    <meta name="generator" content="Hugo 0.38-DEV" />
+
+</head>
+<body class="palette-primary-red palette-accent-teal">
+
+
+<div class="backdrop">
+    <div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+    <nav aria-label="Header">
+        <div class="bar default">
+            <div class="button button-menu" role="button" aria-label="Menu">
+                <label class="toggle-button icon icon-menu" for="toggle-drawer">
+                    <span></span>
+                </label>
+            </div>
+            <div class="stretch">
+                <div class="title">
+                    Agence Web Magento - LavoWeb
+                </div>
+            </div>
+
+
+            <div class="button button-twitter" role="button" aria-label="Twitter">
+                <a href="https://twitter.com/LavoWeb" title="@LavoWeb on Twitter" target="_blank"
+                   class="toggle-button icon icon-twitter"></a>
+            </div>
+
+
+            <div class="button button-github" role="button" aria-label="GitHub">
+                <a href="https://github.com/LavoWeb" title="@LavoWeb on GitHub" target="_blank"
+                   class="toggle-button icon icon-github"></a>
+            </div>
+
+
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="drawer">
+        <nav aria-label="Navigation">
+            <a href="http://lavoweb.net/" class="project">
+                <div class="banner">
+
+                    <div class="logo">
+                        <img src="http://lavoweb.net/images/developpement-magento.png" alt="Agence Magento" />
+                    </div>
+
+                    <div class="name">
+                        <strong>Agence Web Magento - LavoWeb </strong>
+
+                    </div>
+                </div>
+            </a>
+
+            <div class="scrollable">
+                <div class="wrapper">
+
+
+                    <div class="toc">
+                        <ul>
+    <li>
+        
+        <a  title="Agence Web" href="http://lavoweb.net/">
+            Agence Web
+        </a>
+        
+    </li>
+    <li>
+        
+        <a  title="Développement Magento" href="http://lavoweb.net/developpement/">
+            Développement Magento
+        </a>
+        
+    </li>
+    <li>
+        
+        <a  title="Hébergement Magento" href="http://lavoweb.net/hebergement/">
+            Hébergement Magento
+        </a>
+        
+    </li>
+    <li>
+        
+        <a  title="Hébergement Magento" href="http://lavoweb.net/referencement/">
+            Référencement e-commerce
+        </a>
+        
+    </li>
+    <li>
+        
+        
+        <a class="current" title="Articles" href="http://lavoweb.net/post/">
+            Articles
+        </a>
+        
+            <ul id="scrollspy"></ul>
+        
+    </li>
+</ul>
+                        <hr>
+                        <span class="section">L'entreprise</span>
+
+                        <ul>
+
+                            <li>
+                                <a href="mailto:aurelien@lavoweb.net" title="Email of aurelien@lavoweb.net">
+                                    Contacter via email
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <article class="article">
+        <div class="wrapper">
+	<div class="section section-content" id="section-content">
+		<div class="title-block">
+			<h1 class="title-big">Créer un module Magento disponible avec Composer</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 about-info">
+					<p>Créer un repo</p>
+
+<p>Créer le module</p>
+
+<p>Ajout composer.json</p>
+
+<p>Génération modman</p>
+
+<pre><code>curl -sS https://raw.githubusercontent.com/mhauri/generate-modman/master/generate-modman &gt; generate-modman
 sudo mv generate-modman /usr/local/bin
 sudo chmod 755 /usr/local/bin/generate-modman
 /usr/local/bin/generate-modman
 git add modman
-</code></pre><p>créer release dans github repo/releases/new</p><p>créer hook packagist repo/settings/hooks/new?service=packagist</p><p>trouver le token ici : <a href="https://packagist.org/profile/">https://packagist.org/profile/</a></p><p>Ajouter le package dans packagist : <a href=https://packagist.org/packages/submit>https://packagist.org/packages/submit</a></p><p>Ajouter le package dans satis perso</p></div></div><div class=row><div class="col-md-12 about-info"><h3>Voir</h3><ul><li><a href="http://lavoweb.net/post/m2-developpeur/">Magento2 : Mode développeur</a></li><li><a href="http://lavoweb.net/post/ce-ee/">Comment décider entre Magento CE (open-source) et EE (version payante) ?</a></li></ul></div></div></div></div><aside class=copyright role=note>&copy; 2018</aside><footer class=footer><div><p>Agence Web sur Annecy, Bourget-du-Lac, Chambéry et <a href="https://lumao.eu/">Genève</a>. 835 305 657 R.C.S. ANNECY</p></div></footer></div></article><div class=results role=status aria-live=polite><div class=scrollable><div class=wrapper><div class=meta></div><div class=list></div></div></div></div></main><script>
+</code></pre>
+
+<p>créer release dans github
+repo/releases/new</p>
+
+<p>créer hook packagist
+repo/settings/hooks/new?service=packagist</p>
+
+<p>trouver le token ici : <a href="https://packagist.org/profile/">https://packagist.org/profile/</a></p>
+
+<p>Ajouter le package dans packagist : <a href="https://packagist.org/packages/submit">https://packagist.org/packages/submit</a></p>
+
+<p>Ajouter le package dans satis perso</p>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 about-info">
+					
+					
+					<h3>Voir</h3>
+					<ul>
+						
+						<li><a href="http://lavoweb.net/post/m2-developpeur/">Magento2 : Mode développeur</a></li>
+						
+						<li><a href="http://lavoweb.net/post/ce-ee/">Comment décider entre Magento CE (open-source) et EE (version payante) ?</a></li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<aside class="copyright" role="note">
+
+	&copy; 2018
+
+</aside>
+
+<footer class="footer">
+	<div>
+		<p>Agence Web sur Annecy, Bourget-du-Lac, Chambéry et <a href="https://lumao.eu/">Genève</a>. 835 305 657 R.C.S. ANNECY</p>
+	</div>
+</footer>
+</div>
+</article>
+
+<div class="results" role="status" aria-live="polite">
+	<div class="scrollable">
+		<div class="wrapper">
+			<div class="meta"></div>
+			<div class="list"></div>
+		</div>
+	</div>
+</div>
+</main>
+
+<script>
 
     var base_url = '';
     var repo_id  = '';
 
-</script><script src=http://lavoweb.net/javascripts/scripts.min.js></script><script>
+</script>
+
+<script src="http://lavoweb.net/javascripts/scripts.min.js"></script>
+
+
+<script>
      
     var headers   = document.getElementsByTagName("h2");
     var scrollspy = document.getElementById('scrollspy');
@@ -44,4 +274,11 @@ git add modman
             headers[i].appendChild(a);
         }
     }
-</script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script></body></html>
+</script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</html>
+

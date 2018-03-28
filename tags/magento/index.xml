@@ -1,1 +1,95 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version=2.0 xmlns:atom=http://www.w3.org/2005/Atom><channel><title>Magento on Agence Web Magento - LavoWeb</title><link>http://lavoweb.net/tags/magento/<description>Recent content in Magento on Agence Web Magento - LavoWeb</description><generator>Hugo -- gohugo.io</generator><language>fr-fr</language><lastbuilddate>Sat, 24 Mar 2018 00:00:00 +0000</lastbuilddate><atom:link href=http://lavoweb.net/tags/magento/index.xml rel=self type=application/rss+xml><item><title>Créer un module Magento disponible avec Composer</title><link>http://lavoweb.net/post/magento-composer/<pubdate>Sat, 24 Mar 2018 00:00:00 +0000</pubdate><guid>http://lavoweb.net/post/magento-composer/</guid><description>Créer un repo Créer le module Ajout composer.json Génération modman curl -sS https://raw.githubusercontent.com/mhauri/generate-modman/master/generate-modman &amp;gt; generate-modman sudo mv generate-modman /usr/local/bin sudo chmod 755 /usr/local/bin/generate-modman /usr/local/bin/generate-modman git add modman créer release dans github repo/releases/new créer hook packagist repo/settings/hooks/new?service=packagist trouver le token ici : https://packagist.org/profile/ Ajouter le package dans packagist : https://packagist.org/packages/submit Ajouter le package dans satis perso</description></item><item><title>Magento2 : Mode développeur</title><link>http://lavoweb.net/post/m2-developpeur/<pubdate>Sat, 24 Mar 2018 00:00:00 +0000</pubdate><guid>http://lavoweb.net/post/m2-developpeur/</guid><description>Magento 2 propose de base un système de cache assez poussé. Ce qui est génial pour les performances en production mais un peu moins quand on cherche à développer de nouvelles fonctionnalités. Voici ce qu’on peut faire pour améliorer notre productivité : bin/magento deploy:mode:set developer bin/magento cache:disable layout block_html full_page rm -Rf var/view_preprocessed/* pub/static/frontend/* var/cache/mage-* var/page_cache/mage-* Avant la mise en prod, on oublie pas de faire ceci : bin/magento deploy:mode:set production bin/magento cache:enable layout block_html full_page</description></item><item><title>Comment décider entre Magento CE (open-source) et EE (version payante) ?</title><link>http://lavoweb.net/post/ce-ee/<pubdate>Tue, 23 Dec 2014 00:00:00 +0000</pubdate><guid>http://lavoweb.net/post/ce-ee/</guid><description>Cet article est une traduction de l’excellent article de Customer Paradigm, notre interprétation étant personnelle, si vous comprenez bien l’anglais, je vous conseilles de lire l’article original. Tout d’abord, et article a été inspiré de la vidéo ci-dessous. Vous pouvez activer les sous-titres si besoin. Un expert Magento peut vous aider à décider quelle version est adaptée pour votre entreprise. Comment choisir entre la version payante (15550 dollars, soit aux alentours de 11 000 euros) de Magento Enterprise et la version gratuite Community ?</description></item><item><title>Forcer « nouvelles » URL</title><link>http://lavoweb.net/post/forcer-url/<pubdate>Tue, 23 Dec 2014 00:00:00 +0000</pubdate><guid>http://lavoweb.net/post/forcer-url/</guid><description>Quand on a une boutique Magento depuis un bon moment, il arrive souvent que les urls du site aient changé quelques fois depuis l’ouverture du site. On navigue donc avec les « mauvaises » (ou anciennes) urls ce qui entraîne une redirection à chaque clic. Le visiteur ou le moteur de recherche perd donc du temps ce qui peut entraîner une baisse du taux de conversion ou une moins bonne indexation de votre e-commerce.</description></item><item><title>Installer Magento</title><link>http://lavoweb.net/post/installer-magento/<pubdate>Tue, 23 Dec 2014 00:00:00 +0000</pubdate><guid>http://lavoweb.net/post/installer-magento/</guid><description>Voici un guide pour installer le CMS Magento, je vous propose, à chaque fois 2 versions. Une en ligne de commande et une autre plus « normale ». Nous pouvons également faire l’installation + configuration de votre boutique. Etape 1 : télécharger Magento Et oui, tout simplement. Le téléchargement est évidemment gratuit. Pour cela on peut passer par le site officiel ou alors passer par github, ce qui nous permets d’avoir un débit correct donc d’attendre un peu moins longtemps.</description></item><item><title>Magento Multilingue</title><link>http://lavoweb.net/post/multilingue/<pubdate>Sun, 04 May 2014 00:00:00 +0000</pubdate><guid>http://lavoweb.net/post/multilingue/</guid><description>Une fois que votre site e-commerce commence à avoir un peu de trafic, il est important de penser à la suite. Plus vous serez visible, plus vous aurez des visiteurs ne parlant pas votre langue qui vont sur le site. Sur un site français (à la base) pour lequel nous travaillions, nous avions tout simplement plus de 1 000 visiteurs par jour Anglais (Etat-Unis &amp;amp; Royaume-Unis). Perdre ce trafic n’était tout simplement pas possible.</description></item><item><title>Magento : une nouvelle vision dans domaine du commerce</title><link>http://lavoweb.net/post/magento/<pubdate>Sun, 06 Apr 2014 00:00:00 +0000</pubdate><guid>http://lavoweb.net/post/magento/</guid><description>Magento est certainement aujourd’hui la solution e-commerce la plus redoutable de tous les temps. Même si les fonctionnalités de la solution sont assez complexes, cela ne l’a pas empêché de se développer et d’évoluer rapidement. Retour sur la vie émérite de cette plateforme devenue aujourd’hui leader en matière d’e-commerce. Qu’est-ce que le e-commerce ? Le e-commerce ou le commerce électronique est l’utilisation des médias électroniques pour effectuer des transactions commerciales.</description></item></atom:link></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magento on Agence Web Magento - LavoWeb</title>
+    <link>http://lavoweb.net/tags/magento/</link>
+    <description>Recent content in Magento on Agence Web Magento - LavoWeb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 24 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://lavoweb.net/tags/magento/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Créer un module Magento disponible avec Composer</title>
+      <link>http://lavoweb.net/post/magento-composer/</link>
+      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/magento-composer/</guid>
+      <description>Créer un repo
+Créer le module
+Ajout composer.json
+Génération modman
+curl -sS https://raw.githubusercontent.com/mhauri/generate-modman/master/generate-modman &amp;gt; generate-modman sudo mv generate-modman /usr/local/bin sudo chmod 755 /usr/local/bin/generate-modman /usr/local/bin/generate-modman git add modman  créer release dans github repo/releases/new
+créer hook packagist repo/settings/hooks/new?service=packagist
+trouver le token ici : https://packagist.org/profile/
+Ajouter le package dans packagist : https://packagist.org/packages/submit
+Ajouter le package dans satis perso</description>
+    </item>
+    
+    <item>
+      <title>Magento2 : Mode développeur</title>
+      <link>http://lavoweb.net/post/m2-developpeur/</link>
+      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/m2-developpeur/</guid>
+      <description>Magento 2 propose de base un système de cache assez poussé. Ce qui est génial pour les performances en production mais un peu moins quand on cherche à développer de nouvelles fonctionnalités.
+Voici ce qu’on peut faire pour améliorer notre productivité :
+bin/magento deploy:mode:set developer bin/magento cache:disable layout block_html full_page rm -Rf var/view_preprocessed/* pub/static/frontend/* var/cache/mage-* var/page_cache/mage-*  Avant la mise en prod, on oublie pas de faire ceci :
+bin/magento deploy:mode:set production bin/magento cache:enable layout block_html full_page  </description>
+    </item>
+    
+    <item>
+      <title>Comment décider entre Magento CE (open-source) et EE (version payante) ?</title>
+      <link>http://lavoweb.net/post/ce-ee/</link>
+      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/ce-ee/</guid>
+      <description>Cet article est une traduction de l’excellent article de Customer Paradigm, notre interprétation étant personnelle, si vous comprenez bien l’anglais, je vous conseilles de lire l’article original.
+Tout d’abord, et article a été inspiré de la vidéo ci-dessous. Vous pouvez activer les sous-titres si besoin.
+Un expert Magento peut vous aider à décider quelle version est adaptée pour votre entreprise.
+Comment choisir entre la version payante (15550 dollars, soit aux alentours de 11 000 euros) de Magento Enterprise et la version gratuite Community ?</description>
+    </item>
+    
+    <item>
+      <title>Forcer « nouvelles » URL</title>
+      <link>http://lavoweb.net/post/forcer-url/</link>
+      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/forcer-url/</guid>
+      <description>Quand on a une boutique Magento depuis un bon moment, il arrive souvent que les urls du site aient changé quelques fois depuis l’ouverture du site. On navigue donc avec les « mauvaises » (ou anciennes) urls ce qui entraîne une redirection à chaque clic. Le visiteur ou le moteur de recherche perd donc du temps ce qui peut entraîner une baisse du taux de conversion ou une moins bonne indexation de votre e-commerce.</description>
+    </item>
+    
+    <item>
+      <title>Installer Magento</title>
+      <link>http://lavoweb.net/post/installer-magento/</link>
+      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/installer-magento/</guid>
+      <description>Voici un guide pour installer le CMS Magento, je vous propose, à chaque fois 2 versions. Une en ligne de commande et une autre plus « normale ».
+Nous pouvons également faire l’installation + configuration de votre boutique.
+Etape 1 : télécharger Magento Et oui, tout simplement. Le téléchargement est évidemment gratuit. Pour cela on peut passer par le site officiel ou alors passer par github, ce qui nous permets d’avoir un débit correct donc d’attendre un peu moins longtemps.</description>
+    </item>
+    
+    <item>
+      <title>Magento Multilingue</title>
+      <link>http://lavoweb.net/post/multilingue/</link>
+      <pubDate>Sun, 04 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/multilingue/</guid>
+      <description>Une fois que votre site e-commerce commence à avoir un peu de trafic, il est important de penser à la suite. Plus vous serez visible, plus vous aurez des visiteurs ne parlant pas votre langue qui vont sur le site. Sur un site français (à la base) pour lequel nous travaillions, nous avions tout simplement plus de 1 000 visiteurs par jour Anglais (Etat-Unis &amp;amp; Royaume-Unis). Perdre ce trafic n’était tout simplement pas possible.</description>
+    </item>
+    
+    <item>
+      <title>Magento : une nouvelle vision dans domaine du commerce</title>
+      <link>http://lavoweb.net/post/magento/</link>
+      <pubDate>Sun, 06 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/magento/</guid>
+      <description>Magento est certainement aujourd’hui la solution e-commerce la plus redoutable de tous les temps. Même si les fonctionnalités de la solution sont assez complexes, cela ne l’a pas empêché de se développer et d’évoluer rapidement. Retour sur la vie émérite de cette plateforme devenue aujourd’hui leader en matière d’e-commerce.
+Qu’est-ce que le e-commerce ? Le e-commerce ou le commerce électronique est l’utilisation des médias électroniques pour effectuer des transactions commerciales.</description>
+    </item>
+    
+  </channel>
+</rss>

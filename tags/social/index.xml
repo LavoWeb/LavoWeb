@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?><rss version=2.0 xmlns:atom=http://www.w3.org/2005/Atom><channel><title>Social on Agence Web Magento - LavoWeb</title><link>http://lavoweb.net/tags/social/<description>Recent content in Social on Agence Web Magento - LavoWeb</description><generator>Hugo -- gohugo.io</generator><language>fr-fr</language><lastbuilddate>Fri, 16 May 2014 00:00:00 +0000</lastbuilddate><atom:link href=http://lavoweb.net/tags/social/index.xml rel=self type=application/rss+xml><item><title>Pinterest pour promouvoir vos produits</title><link>http://lavoweb.net/post/pinterest/<pubdate>Fri, 16 May 2014 00:00:00 +0000</pubdate><guid>http://lavoweb.net/post/pinterest/</guid><description>Dans le monde de l’e-commerce, il existe plusieurs plateformes pour promouvoir et vendre les produits. Pinterest fait partie de ces plateformes développés qui aident dans la promotion des produits et des entreprises. Il s’agit d’un réseau social très prisé des internautes en ce moment, pour partager, et vendre des produits. Pinterest, 3ème réseau social Depuis quelques temps, les internautes se ruent vers ce réseau social qui se développe de plus en plus chaque jour.</description></item></atom:link></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Social on Agence Web Magento - LavoWeb</title>
+    <link>http://lavoweb.net/tags/social/</link>
+    <description>Recent content in Social on Agence Web Magento - LavoWeb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 16 May 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://lavoweb.net/tags/social/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pinterest pour promouvoir vos produits</title>
+      <link>http://lavoweb.net/post/pinterest/</link>
+      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/post/pinterest/</guid>
+      <description>Dans le monde de l’e-commerce, il existe plusieurs plateformes pour promouvoir et vendre les produits. Pinterest fait partie de ces plateformes développés qui aident dans la promotion des produits et des entreprises. Il s’agit d’un réseau social très prisé des internautes en ce moment, pour partager, et vendre des produits.
+Pinterest, 3ème réseau social Depuis quelques temps, les internautes se ruent vers ce réseau social qui se développe de plus en plus chaque jour.</description>
+    </item>
+    
+  </channel>
+</rss>
