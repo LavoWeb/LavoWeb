@@ -1,0 +1,42 @@
+/*  This file only exists (temporarily) until the
+    custom styling can be replaced with the
+    implementation of the upstream project.
+*/
+
+blockquote {
+    padding: 0 20px;
+    margin: 0 0 20px;
+    font-size: inherit;
+    border-left: 5px solid #eee;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    color: white!important;
+}
+
+.pagination {
+    float: right;
+}
+
+@font-face {
+    font-family: 'Icon';
+    src: url('/fonts/icon.eot');
+    src: url('/fonts/icon.eot') format('embedded-opentype'),
+    url('/fonts/icon.woff') format('woff'),
+    url('/fonts/icon.ttf') format('truetype'),
+    url('/fonts/icon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, input {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+pre, code {
+    font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+}
