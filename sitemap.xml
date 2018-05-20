@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lavoweb.net/post/seo-youtube/</loc>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://lavoweb.net/post/magento-composer/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
   </url>
@@ -199,7 +204,13 @@
   
   <url>
     <loc>http://lavoweb.net/post/</loc>
-    <lastmod>2018-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lavoweb.net/tags/seo/</loc>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
