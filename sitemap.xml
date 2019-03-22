@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lavoweb.net/post/charte-graphique/</loc>
+    <lastmod>2019-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://lavoweb.net/post/smartphone-pliable/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
   </url>
@@ -182,6 +187,12 @@
   </url>
   
   <url>
+    <loc>http://lavoweb.net/tags/graphisme/</loc>
+    <lastmod>2019-03-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://lavoweb.net/tags/magento/</loc>
     <lastmod>2018-03-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -231,7 +242,7 @@
   
   <url>
     <loc>http://lavoweb.net/post/</loc>
-    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
