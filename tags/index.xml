@@ -6,49 +6,13 @@
     <description>Recent content in Tags on Agence Web Magento - LavoWeb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Fri, 08 May 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://lavoweb.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Akeneo</title>
-      <link>http://lavoweb.net/tags/akeneo/</link>
-      <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://lavoweb.net/tags/akeneo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cdn</title>
-      <link>http://lavoweb.net/tags/cdn/</link>
-      <pubDate>Mon, 06 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://lavoweb.net/tags/cdn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deploiement</title>
-      <link>http://lavoweb.net/tags/deploiement/</link>
-      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://lavoweb.net/tags/deploiement/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>http://lavoweb.net/tags/git/</link>
-      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://lavoweb.net/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Graphisme</title>
+      <title>graphisme</title>
       <link>http://lavoweb.net/tags/graphisme/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
@@ -57,43 +21,7 @@
     </item>
     
     <item>
-      <title>Magento</title>
-      <link>http://lavoweb.net/tags/magento/</link>
-      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://lavoweb.net/tags/magento/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Magento 2</title>
-      <link>http://lavoweb.net/tags/magento-2/</link>
-      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://lavoweb.net/tags/magento-2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mail</title>
-      <link>http://lavoweb.net/tags/mail/</link>
-      <pubDate>Sun, 08 Jun 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://lavoweb.net/tags/mail/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Marketing</title>
-      <link>http://lavoweb.net/tags/marketing/</link>
-      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://lavoweb.net/tags/marketing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Netlinking</title>
+      <title>netlinking</title>
       <link>http://lavoweb.net/tags/netlinking/</link>
       <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -102,34 +30,7 @@
     </item>
     
     <item>
-      <title>Pc</title>
-      <link>http://lavoweb.net/tags/pc/</link>
-      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://lavoweb.net/tags/pc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Performance</title>
-      <link>http://lavoweb.net/tags/performance/</link>
-      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://lavoweb.net/tags/performance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pim</title>
-      <link>http://lavoweb.net/tags/pim/</link>
-      <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://lavoweb.net/tags/pim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Seo</title>
+      <title>seo</title>
       <link>http://lavoweb.net/tags/seo/</link>
       <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -138,20 +39,119 @@
     </item>
     
     <item>
-      <title>Social</title>
-      <link>http://lavoweb.net/tags/social/</link>
-      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
+      <title>pc</title>
+      <link>http://lavoweb.net/tags/pc/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://lavoweb.net/tags/social/</guid>
+      <guid>http://lavoweb.net/tags/pc/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ssh</title>
+      <title>magento</title>
+      <link>http://lavoweb.net/tags/magento/</link>
+      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/tags/magento/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>magento 2</title>
+      <link>http://lavoweb.net/tags/magento-2/</link>
+      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/tags/magento-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance</title>
+      <link>http://lavoweb.net/tags/performance/</link>
+      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
       <link>http://lavoweb.net/tags/ssh/</link>
       <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>http://lavoweb.net/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>marketing</title>
+      <link>http://lavoweb.net/tags/marketing/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/tags/marketing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>akeneo</title>
+      <link>http://lavoweb.net/tags/akeneo/</link>
+      <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/tags/akeneo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pim</title>
+      <link>http://lavoweb.net/tags/pim/</link>
+      <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/tags/pim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deploiement</title>
+      <link>http://lavoweb.net/tags/deploiement/</link>
+      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/tags/deploiement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>http://lavoweb.net/tags/git/</link>
+      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cdn</title>
+      <link>http://lavoweb.net/tags/cdn/</link>
+      <pubDate>Mon, 06 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/tags/cdn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mail</title>
+      <link>http://lavoweb.net/tags/mail/</link>
+      <pubDate>Sun, 08 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/tags/mail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>social</title>
+      <link>http://lavoweb.net/tags/social/</link>
+      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/tags/social/</guid>
       <description></description>
     </item>
     
