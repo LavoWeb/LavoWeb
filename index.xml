@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Agence web Magento on Agence Web Magento - LavoWeb</title>
+    <title>Agence Web Magento | Votre projet e-commerce avec Lavoweb on Agence Web Magento - LavoWeb</title>
     <link>http://lavoweb.net/</link>
-    <description>Recent content in Agence web Magento on Agence Web Magento - LavoWeb</description>
+    <description>Recent content in Agence Web Magento | Votre projet e-commerce avec Lavoweb on Agence Web Magento - LavoWeb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <lastBuildDate>Tue, 08 Mar 2016 21:07:13 +0100</lastBuildDate>
     
 	<atom:link href="http://lavoweb.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Création de site Magento : vente de produits en ligne| Agence Lavoweb</title>
+      <link>http://lavoweb.net/creation/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/creation/</guid>
+      <description>Magento est un CMS, c’est-à-dire un système de gestion de contenu. Cette plateforme open source permet de créer et de gérer un site e-commerce, à l’instar de Prestashop, son principal concurrent. Voyons en quoi un développement Magento est intéressant pour votre projet e-commerce.
+Pourquoi choisir Magento pour son site e-commerce ? Lancé en 2008 et racheté en 2018 par Adobe, Magento est un CMS dédié spécialement au e-commerce. Ce CMS open source, libre d’accès, permet la création d’une boutique en ligne, peu importe sa taille et son domaine d’activité.</description>
+    </item>
+    
+    <item>
+      <title>Expert Magento | Le développement de votre projet web avec Lavoweb</title>
+      <link>http://lavoweb.net/expert/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://lavoweb.net/expert/</guid>
+      <description>Magento est un CMS open source dédié au e-commerce. Créée en 2008, cette plateforme de commerce électronique permet la création, la gestion et la personnalisation de sites e-commerce, même lorsque ceux-ci disposent d’un important catalogue de produits. Un développement Magento vous aide à optimiser votre boutique en ligne grâce à l’installation de modules et de fonctionnalités adaptés à vos besoins spécifiques présents, mais aussi à venir. Les experts de Lavoweb vous accompagnent tout au long de votre projet, et ce, même après la mise en ligne de votre site marchand.</description>
+    </item>
     
     <item>
       <title>Pourquoi faut-il intégrer l’actualité des start-ups à sa veille ?</title>
@@ -119,16 +138,12 @@ C’est peut-être une requête SQL où il manque un index, une collection charg
     </item>
     
     <item>
-      <title>Développement Magento</title>
+      <title>Développement Magento | Votre projet de site e-commerce avec Lavoweb</title>
       <link>http://lavoweb.net/developpement/</link>
       <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>http://lavoweb.net/developpement/</guid>
-      <description>Développeur Magento Vous cherchez un développeur Magento ? Nous pouvons vous aider !
-Nos expertises  Mettre à jour votre e-commerce
- Créer des exports de produits suivant le stock, une catégorie, le nombre de vente…
- Créer un flux XML/CSV ou en temps réel pour google shopping ou bien les marketplaces (Amazon, Cdiscount, Pixmania…).
- Exporter les commandes suivant l’état afin de calculer le CA théorique ou réel.</description>
+      <description>Magento est un CMS open source permettant la création et la gestion de sites e-commerce, peu importe leur taille et leur secteur d’activité. Puissant, il se montre particulièrement adapté aux boutiques en ligne disposant d’un volumineux catalogue produits. Vous souhaitez faire appel à une agence spécialisée pour la création de votre site Magento et en savoir plus sur ce CMS ? Voici nos conseils en tant que développeurs certifiés Magento.</description>
     </item>
     
     <item>
@@ -145,13 +160,13 @@ Chez nous, on distingue 2 types d’hébergements :
     </item>
     
     <item>
-      <title>Référencement Magento</title>
+      <title>Référencement Magento | SEO pour votre site e-commerce | Lavoweb</title>
       <link>http://lavoweb.net/referencement/</link>
       <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
       
       <guid>http://lavoweb.net/referencement/</guid>
-      <description>Référencement e-commerce Magento Le référencement naturel ou SEO (Search Engine Optimisation) est la clé de la réussite d’un projet e-commerce.
-En effet, avoir un bon référencement sur votre boutique Magento vous permets d’acquérir du trafic gratuitement ! Une fois que les positions sont acquises, vous n’avez plus rien à payer. Et quand on voit le prix d’un clic avec du référencement payant, on comprend rapidement l’importance du référencement naturel.</description>
+      <description>Votre site e-commerce Magento répond à vos besoins et dispose des fonctionnalités nécessaires à son bon fonctionnement. A présent, votre boutique en ligne doit attirer des visiteurs pour générer des ventes. Comment ? Avec des techniques de webmarketing et, surtout, grâce au référencement Magento qui va vous permettre d’être visible sur Google et les moteurs de recherche.
+Qu’est-ce que le référencement Magento ? Il existe deux types de techniques de référencement : le référencement payant (SEA) via Google Ads (ex-Google Adwords) et son système d’enchères et le référencement naturel, appelé aussi référencement organique.</description>
     </item>
     
     <item>

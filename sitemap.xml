@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lavoweb.net/creation/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lavoweb.net/expert/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://lavoweb.net/post/</loc>
     <lastmod>2019-03-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
