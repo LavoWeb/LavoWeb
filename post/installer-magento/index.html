@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
 
     
-    <meta name="generator" content="Hugo 0.59.0-DEV" />
+    <meta name="generator" content="Hugo 0.61.0-DEV" />
     
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -183,61 +183,40 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 about-info">
-					
-
-<p>Voici un guide pour installer le CMS Magento, je vous propose, à chaque fois 2 versions. Une en ligne de commande et une autre plus « normale ».</p>
-
+					<p>Voici un guide pour installer le CMS Magento, je vous propose, à chaque fois 2 versions. Une en ligne de commande et une autre plus « normale ».</p>
 <p>Nous pouvons également faire l’installation + configuration de votre boutique.</p>
-
-<h2 id="etape-1-télécharger-magento">Etape 1 : télécharger Magento</h2>
-
+<h2 id="etape-1--tlcharger-magento">Etape 1 : télécharger Magento</h2>
 <p>Et oui, tout simplement. Le téléchargement est évidemment gratuit. Pour cela on peut passer par le site officiel ou alors passer par github, ce qui nous permets d’avoir un débit correct donc d’attendre un peu moins longtemps.</p>
-
 <p>En ligne de commande, il suffit se placer dans le répertoire d’installation puis de faire un :</p>
-
 <pre><code>git clone https://github.com/OpenMage/magento-mirror.git .
-</code></pre>
-
-<p>En graphique, il suffit de télécharger ce fichier :</p>
-
+</code></pre><p>En graphique, il suffit de télécharger ce fichier :</p>
 <pre><code>https://github.com/OpenMage/magento-mirror/archive/magento-1.9.zip
-</code></pre>
-
-<p>Puis de la dé-zipper via 7zip par exemple et enfin d’uploader les fichiers sur votre hébergeur via FilleZilla par exemple.</p>
-
-<h2 id="etape-2-création-de-la-base-de-donnée">Etape 2 : Création de la base de donnée</h2>
-
+</code></pre><p>Puis de la dé-zipper via 7zip par exemple et enfin d’uploader les fichiers sur votre hébergeur via FilleZilla par exemple.</p>
+<h2 id="etape-2--cration-de-la-base-de-donne">Etape 2 : Création de la base de donnée</h2>
 <p>La seconde étape consiste à créer une base de donnée. Si vous êtes sur un hébergement « mutualisé », il faut la créer via l’interface d’administration de votre hébergeur. Dans un hébergement « dédié », il faut demander à votre administrateur système de la créer.</p>
-
 <p>En ligne de commande, il faut donc faire un :</p>
-
 <pre><code>mysql -u root -p
-</code></pre>
-
-<p>pour se connecter puis (pensez à mettre vos propres valeurs, c’est toujours mieux) :</p>
-
+</code></pre><p>pour se connecter puis (pensez à mettre vos propres valeurs, c’est toujours mieux) :</p>
 <pre><code>CREATE DATABASE magento_database;
 GRANT ALL PRIVILEGES ON magento_database.* TO magento_db_user@localhost IDENTIFIED BY ‘magento_db_pass’;
-</code></pre>
-
-<p>pour créer la base de donnée avec un utilisateur.</p>
-
+</code></pre><p>pour créer la base de donnée avec un utilisateur.</p>
 <p>Nous aurons besoin du nom de la base de donnée magento_database, de l’utilisateur magento_database_user et du mot de passe magento_database_pass plus tard, il faut bien les noter.</p>
-
-<h2 id="etape-3-installation-de-magento">Etape 3 : Installation de Magento</h2>
-
+<h2 id="etape-3--installation-de-magento">Etape 3 : Installation de Magento</h2>
 <p>C’est bientôt finit ! Il nous faut maintenant aller sur notre navigateur puis sur le domaine. Si tout se passe bien, on est redirigé vers la page d’installation qui comporte 4 étapes. Il ne faut pas avoir peur, vous avez déjà tout.</p>
-
 <ul>
-<li><p>Accepter la licence.</p></li>
-
-<li><p>Langue</p></li>
-
-<li><p>Configuration de la base de donnée (entre autre)</p></li>
-
-<li><p>Créer un compte administrateur</p></li>
+<li>
+<p>Accepter la licence.</p>
+</li>
+<li>
+<p>Langue</p>
+</li>
+<li>
+<p>Configuration de la base de donnée (entre autre)</p>
+</li>
+<li>
+<p>Créer un compte administrateur</p>
+</li>
 </ul>
-
 <p>Une fois que vous aurez validé cette dernière étape, votre boutique sera installé. Bravo !</p>
 
 				</div>
@@ -336,7 +315,9 @@ GRANT ALL PRIVILEGES ON magento_database.* TO magento_db_user@localhost IDENTIFI
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=5834f365-e0f5-4aed-929d-fd5bce2c17f7"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+	window.$crisp=[];window.CRISP_WEBSITE_ID="b48f7286-9c82-45c3-9efd-449ced615937";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
 </html>
 

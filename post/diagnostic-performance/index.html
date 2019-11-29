@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
 
     
-    <meta name="generator" content="Hugo 0.59.0-DEV" />
+    <meta name="generator" content="Hugo 0.61.0-DEV" />
     
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -183,41 +183,23 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 about-info">
-					
-
-<p>On dit parfois que Magento est lent, je ne pense pas. Si on respecte les bonnes pratiques, c’est plutôt rapide, il suffit de voir les sites des grands acteurs du e-commerce pour s’en rendre compte. Aujourd’hui on va parler d’un outil tout simple qui nous permettra de savoir ce qui rend le site lent.</p>
-
+					<p>On dit parfois que Magento est lent, je ne pense pas. Si on respecte les bonnes pratiques, c’est plutôt rapide, il suffit de voir les sites des grands acteurs du e-commerce pour s’en rendre compte. Aujourd’hui on va parler d’un outil tout simple qui nous permettra de savoir ce qui rend le site lent.</p>
 <p>C’est peut-être une requête SQL où il manque un index, une collection chargée sans filtre, une boucle non optimisée ou pleins d’autres choses encore. On va parler de l’outil linux strace. Je l’ai découvert en ayant à analyser des boucles infinis sur un site.</p>
-
 <p>Strace log tout simplement tous les appels systèmes. C’est très verbeux mais ça permets d’identifier facilement ce qui ne vas pas sur une appli.</p>
-
 <p>Voici comment l’utiliser pour débugger une application PHP.</p>
-
-<h2 id="écouter-le-processus-apache2">Écouter le processus Apache2</h2>
-
+<h2 id="couter-le-processus-apache2">Écouter le processus Apache2</h2>
 <p>Si on utilise Apache avec PHP en mode CLI, il faut monitorer apache. Si on utilise PHP-FPM ou autre, il faudra monitorer le processus PHP.</p>
-
 <pre><code>strace -t -s 256 apache2 -X
-</code></pre>
-
-<p>On lance donc la commande strace avec l’option -t (afficher l’heure), s (pour limiter le nombre de caractère par ligne à 256 – c’est le minimum pour voir les requêtes SQL). Ensuite on lance apache en mode CLI et non en mode daemon, ce qui permets de ne pas « perdre » le processus.</p>
-
+</code></pre><p>On lance donc la commande strace avec l’option -t (afficher l’heure), s (pour limiter le nombre de caractère par ligne à 256 – c’est le minimum pour voir les requêtes SQL). Ensuite on lance apache en mode CLI et non en mode daemon, ce qui permets de ne pas « perdre » le processus.</p>
 <p>Ensuite on visite la page qui nous intéresse et on verra tous les appels systèmes. Il ne nous reste lus qu’a trier ceux qui prennent le plus de temps (avec Excel par exemple) et à optimiser :)</p>
-
 <p>Pour terminer le processus, un CTRL+C ne suffit pas, il faut killer le processus :</p>
-
 <pre><code>ps aux |grep apache2
 
-</code></pre>
-
-<blockquote>
+</code></pre><blockquote>
 <p>ncyuser  31836  2.8  2.7 389412 112556 pts/10  R+   10:25   0:04 apache2 -X</p>
 </blockquote>
-
 <pre><code>kill -9 31836
-</code></pre>
-
-<p>Le -9 est obligatoire dans ce cas !</p>
+</code></pre><p>Le -9 est obligatoire dans ce cas !</p>
 
 				</div>
 			</div>
@@ -313,7 +295,9 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=5834f365-e0f5-4aed-929d-fd5bce2c17f7"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+	window.$crisp=[];window.CRISP_WEBSITE_ID="b48f7286-9c82-45c3-9efd-449ced615937";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
 </html>
 

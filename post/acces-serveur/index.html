@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
 
     
-    <meta name="generator" content="Hugo 0.59.0-DEV" />
+    <meta name="generator" content="Hugo 0.61.0-DEV" />
     
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -183,44 +183,25 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 about-info">
-					
-
-<p>Quand on commence à avoir beaucoup de serveurs à gérer, il devient urgent d’avoir une bonne politique pour gérer les connexions. C’est compliqué de retenir x mots de passe donc il devient tentant de mettre plusieurs fois le même. Les clés ssh avec une bonne configuration sont ont bonne solution à ce problème.</p>
-
-<h2 id="générer-une-clé-ssh">Générer une clé SSH</h2>
-
+					<p>Quand on commence à avoir beaucoup de serveurs à gérer, il devient urgent d’avoir une bonne politique pour gérer les connexions. C’est compliqué de retenir x mots de passe donc il devient tentant de mettre plusieurs fois le même. Les clés ssh avec une bonne configuration sont ont bonne solution à ce problème.</p>
+<h2 id="gnrer-une-cl-ssh">Générer une clé SSH</h2>
 <pre><code>ssh-keygen -t dsa
-</code></pre>
-
-<p>Une bonne pratique est de mettre son email en commentaire de la clé publique, ça permets de savoir plus facilement qui a accès à quoi. Il faut toujours mettre une passphrase si c’est un environnement extérieur.</p>
-
-<h2 id="autoriser-une-clé-sur-un-serveur">Autoriser une clé sur un serveur</h2>
-
+</code></pre><p>Une bonne pratique est de mettre son email en commentaire de la clé publique, ça permets de savoir plus facilement qui a accès à quoi. Il faut toujours mettre une passphrase si c’est un environnement extérieur.</p>
+<h2 id="autoriser-une-cl-sur-un-serveur">Autoriser une clé sur un serveur</h2>
 <pre><code>ssh-copy-id -i ~/.ssh/server_dsa.pub aurelien@example.net -p 2222
-</code></pre>
-
-<h2 id="associé-les-clés-à-un-serveur">Associé les clés à un serveur</h2>
-
+</code></pre><h2 id="associ-les-cls--un-serveur">Associé les clés à un serveur</h2>
 <p>Créer le fichier ~/.ssh/config</p>
-
 <pre><code>Host example example.lavoweb.net mycustomer 192.168.1.1
     HostName example.net
     Port 2222
     User aurelien
     IdentityFile ~/.ssh/server_dsa
     LocalForward 3307 127.0.0.1:3306
-</code></pre>
-
-<p>Ici, il suffira de taper dans la console ssh example pour se connecter au serveur et non plus ssh aurelien@exemple.net -p 2222 -i ~/.ssh/server_dsa. C’est un gain de temps non négligeable. Vous pouvez vous générer une clé par environnement et par exemple avoir un login sans mot de passe sur vos instances locales.</p>
-
+</code></pre><p>Ici, il suffira de taper dans la console ssh example pour se connecter au serveur et non plus ssh <a href="mailto:aurelien@exemple.net">aurelien@exemple.net</a> -p 2222 -i ~/.ssh/server_dsa. C’est un gain de temps non négligeable. Vous pouvez vous générer une clé par environnement et par exemple avoir un login sans mot de passe sur vos instances locales.</p>
 <p>On peut mettre autant d’alias qu’on a envie, c’est pratique ! En général je mets le nom du serveur, l’alias via un de mes domaines, le nom du client et l’ip du serveur.</p>
-
 <p>Si j’ai envie de faire un tunnel ssh, je peux utiliser la directive LocalForward et rajouter dans ma commande ssh -f -N ou encore me créer un alias de ce type :</p>
-
 <pre><code>alias ssht=’ssh -f -N’
-</code></pre>
-
-<p>C’est pratique pour accéder à un serveur SQL, monit, Solr &amp; bien d’autres applis.</p>
+</code></pre><p>C’est pratique pour accéder à un serveur SQL, monit, Solr &amp; bien d’autres applis.</p>
 
 				</div>
 			</div>
@@ -309,7 +290,9 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=5834f365-e0f5-4aed-929d-fd5bce2c17f7"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+	window.$crisp=[];window.CRISP_WEBSITE_ID="b48f7286-9c82-45c3-9efd-449ced615937";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
 </html>
 

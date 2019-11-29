@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ssh on Agence Web Magento - LavoWeb</title>
@@ -18,7 +18,7 @@
       
       <guid>http://lavoweb.net/post/acces-serveur/</guid>
       <description>Quand on commence à avoir beaucoup de serveurs à gérer, il devient urgent d’avoir une bonne politique pour gérer les connexions. C’est compliqué de retenir x mots de passe donc il devient tentant de mettre plusieurs fois le même. Les clés ssh avec une bonne configuration sont ont bonne solution à ce problème.
-Générer une clé SSH ssh-keygen -t dsa  Une bonne pratique est de mettre son email en commentaire de la clé publique, ça permets de savoir plus facilement qui a accès à quoi.</description>
+Générer une clé SSH ssh-keygen -t dsa Une bonne pratique est de mettre son email en commentaire de la clé publique, ça permets de savoir plus facilement qui a accès à quoi.</description>
     </item>
     
   </channel>

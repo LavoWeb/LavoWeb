@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>magento on Agence Web Magento - LavoWeb</title>
@@ -21,7 +21,7 @@
 Créer le module
 Ajout composer.json
 Génération modman
-curl -sS https://raw.githubusercontent.com/mhauri/generate-modman/master/generate-modman &amp;gt; generate-modman sudo mv generate-modman /usr/local/bin sudo chmod 755 /usr/local/bin/generate-modman /usr/local/bin/generate-modman git add modman  créer release dans github repo/releases/new
+curl -sS https://raw.githubusercontent.com/mhauri/generate-modman/master/generate-modman &amp;gt; generate-modman sudo mv generate-modman /usr/local/bin sudo chmod 755 /usr/local/bin/generate-modman /usr/local/bin/generate-modman git add modman créer release dans github repo/releases/new
 créer hook packagist repo/settings/hooks/new?service=packagist
 trouver le token ici : https://packagist.org/profile/
 Ajouter le package dans packagist : https://packagist.org/packages/submit
@@ -36,8 +36,8 @@ Ajouter le package dans satis perso</description>
       <guid>http://lavoweb.net/post/m2-developpeur/</guid>
       <description>Magento 2 propose de base un système de cache assez poussé. Ce qui est génial pour les performances en production mais un peu moins quand on cherche à développer de nouvelles fonctionnalités.
 Voici ce qu’on peut faire pour améliorer notre productivité :
-bin/magento deploy:mode:set developer bin/magento cache:disable layout block_html full_page rm -Rf var/view_preprocessed/* pub/static/frontend/* var/cache/mage-* var/page_cache/mage-*  Avant la mise en prod, on oublie pas de faire ceci :
-bin/magento deploy:mode:set production bin/magento cache:enable layout block_html full_page  </description>
+bin/magento deploy:mode:set developer bin/magento cache:disable layout block_html full_page rm -Rf var/view_preprocessed/* pub/static/frontend/* var/cache/mage-* var/page_cache/mage-* Avant la mise en prod, on oublie pas de faire ceci :
+bin/magento deploy:mode:set production bin/magento cache:enable layout block_html full_page </description>
     </item>
     
     <item>
@@ -88,7 +88,7 @@ Etape 1 : télécharger Magento Et oui, tout simplement. Le téléchargement est
       
       <guid>http://lavoweb.net/post/magento/</guid>
       <description>Magento est certainement aujourd’hui la solution e-commerce la plus redoutable de tous les temps. Même si les fonctionnalités de la solution sont assez complexes, cela ne l’a pas empêché de se développer et d’évoluer rapidement. Retour sur la vie émérite de cette plateforme devenue aujourd’hui leader en matière d’e-commerce.
-Qu’est-ce que le e-commerce ? Le e-commerce ou le commerce électronique est l’utilisation des médias électroniques pour effectuer des transactions commerciales.</description>
+Qu’est-ce que le e-commerce ? Le e-commerce ou le commerce électronique est l’utilisation des médias électroniques pour effectuer des transactions commerciales. Presque les situations d’e-commerce s’agissent de vente de produits sur le réseau Internet, mais elles englobent également le mécanisme d’achat sur Internet.</description>
     </item>
     
   </channel>

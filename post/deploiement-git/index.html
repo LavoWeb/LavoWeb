@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
 
     
-    <meta name="generator" content="Hugo 0.59.0-DEV" />
+    <meta name="generator" content="Hugo 0.61.0-DEV" />
     
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -184,51 +184,28 @@
 			<div class="row">
 				<div class="col-md-12 about-info">
 					<p>Git est un CVS bien pratique, encore plus si on peut l’utiliser directement pour de la mise en production. Voici comment faire.</p>
-
 <p>Dans la configuration que je vais présenter, il y a un poste de développement avec PhpStorm et un serveur sous Debian 7 avec Nginx + Php-fpm.</p>
-
 <p>Si ce n’est pas fait, il faut installer Git sur le serveur :</p>
-
 <pre><code>sudo apt-get install git
-</code></pre>
-
-<p>Tout d’abord, il faut créer un dépôt sur son serveur puis initialiser le repo :</p>
-
+</code></pre><p>Tout d’abord, il faut créer un dépôt sur son serveur puis initialiser le repo :</p>
 <pre><code>mkdir -p /var/repo/WEBSITE.git
 cd /var/repo/WEBSITE.git
 git init –bare
-</code></pre>
-
-<p>On s’assure que l’utilisateur SSH ait bien les droits d’accès au repo TODO</p>
-
+</code></pre><p>On s’assure que l’utilisateur SSH ait bien les droits d’accès au repo TODO</p>
 <p>On peut de suite passer sous PhpStorm pour synchroniser le projet (il n’y a pas grand chose pour l’instant) en local. Pour importer le projet, il suffit de cliquer sur « Check out from Version Control » :</p>
-
 <p>Check out from Version Control</p>
-
 <p>Sélectionner Git :</p>
-
 <p>PhpSotrm, Sélectionner Git comme CVS</p>
-
 <p>Puis de rentrer ses informations sous la forme USER@DOMAIN:PORT/var/repo/WEBSITE.git :</p>
-
 <p>PhpStorm Clone Repository</p>
-
 <p>Il vous suffit de valider l’ajout de la clé SSH dans votre cache puis de taper le mot de passe de l’utilisateur. Ici nous n’avons pas grand chose mais c’est normal.</p>
-
 <p>On va créer les deux branches (de développement et de production) ici :</p>
-
 <p>PhpStorm créer branche Git</p>
-
 <p>Puis :</p>
-
 <p>Git Nouvelle Branch</p>
-
 <p>Et enfin on ajoute nos branches (prod/master et dev/master) :</p>
-
 <p>Branch OK</p>
-
 <p>On retourne sur notre serveur afin d’ajouter le site de développement et le site de production :</p>
-
 <pre><code>mkdir -p /home/WEBSITE.com
 mkdir -p /home/beta.WEBSITE.com
 cd /home/WEBSITE.com
@@ -237,39 +214,23 @@ git pull origin prod/master
 cd /home/beta.WEBSITE.com
 git clone /var/repo/WEBSITE.git .
 git pull origin dev/master
-</code></pre>
-
-<p>Si vous avez une erreur avec le git pull, c’est « juste » que les branches n’ont pas encore été crées, pas de panique.</p>
-
+</code></pre><p>Si vous avez une erreur avec le git pull, c’est « juste » que les branches n’ont pas encore été crées, pas de panique.</p>
 <p>Maintenant, on passe à la synchronisation, c’est assez moche mais ça marche :)</p>
-
 <pre><code>nano /var/repo/WEBSITE.git/hooks/post-receive
-</code></pre>
-
-<pre><code>#!/bin/bash
+</code></pre><pre><code>#!/bin/bash
 unset GIT_DIR
 cd /home/WEBSITE.com
 git pull origin prod/master
 unset GIT_DIR
 cd /home/beta.WEBSITE.com
 git pull origin dev/master
-</code></pre>
-
-<pre><code>chmod +x /var/repo/WEBSITE.git/hooks/post-receive
-</code></pre>
-
-<p>En gros, à chaque fois qu’un utilisateur fera un push vers le serveur et qu’il sera fini, git essayera tout seul de remettre à jour le code des deux environnements. Vous pouvez rajouter des conditions pour ne le faire qu’a l’endroit du push.</p>
-
+</code></pre><pre><code>chmod +x /var/repo/WEBSITE.git/hooks/post-receive
+</code></pre><p>En gros, à chaque fois qu’un utilisateur fera un push vers le serveur et qu’il sera fini, git essayera tout seul de remettre à jour le code des deux environnements. Vous pouvez rajouter des conditions pour ne le faire qu’a l’endroit du push.</p>
 <p>On donne à notre utilisateur les droits d’accès sur nos sites en les ajoutant dans le groupe linux du site. Il faut bien le faire sur les deux pour ne pas avoir de surprises :</p>
-
 <pre><code>usermod –a –G WEBSITE aurelien
 usermod –a –G beta.WEBSITE aurelien
-</code></pre>
-
-<p>Il ne reste plus qu’a tester si ça fonctionne ou pas. Pour cela, on crée un fichier test.html dans notre IDE préféré. On l’ajoute, le commit puis le pull sur la branche dev/master. Ensuite un regarde si le fichier est bien présent dans le serveur ici : /home/beta.WEBSITE.com et qu’il n’est pas là : /home/WEBSITE.com.</p>
-
+</code></pre><p>Il ne reste plus qu’a tester si ça fonctionne ou pas. Pour cela, on crée un fichier test.html dans notre IDE préféré. On l’ajoute, le commit puis le pull sur la branche dev/master. Ensuite un regarde si le fichier est bien présent dans le serveur ici : /home/beta.WEBSITE.com et qu’il n’est pas là : /home/WEBSITE.com.</p>
 <p>Si c’est bon, on fait la même chose sur la branche prod/master et on vérifie que le fichier est bien présent dans /home/WEBSITE.com.</p>
-
 <p>Bon courage et n’hésitez pas à poser des questions si besoin !</p>
 
 				</div>
@@ -359,7 +320,9 @@ usermod –a –G beta.WEBSITE aurelien
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=5834f365-e0f5-4aed-929d-fd5bce2c17f7"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+	window.$crisp=[];window.CRISP_WEBSITE_ID="b48f7286-9c82-45c3-9efd-449ced615937";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
 </html>
 
