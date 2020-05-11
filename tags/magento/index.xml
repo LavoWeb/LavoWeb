@@ -48,7 +48,7 @@ bin/magento deploy:mode:set production bin/magento cache:enable layout block_htm
       <guid>http://lavoweb.net/post/ce-ee/</guid>
       <description>Cet article est une traduction de l’excellent article de Customer Paradigm, notre interprétation étant personnelle, si vous comprenez bien l’anglais, je vous conseilles de lire l’article original.
 Tout d’abord, et article a été inspiré de la vidéo ci-dessous. Vous pouvez activer les sous-titres si besoin.
-Un expert Magento peut vous aider à décider quelle version est adaptée pour votre entreprise.
+ Un expert Magento peut vous aider à décider quelle version est adaptée pour votre entreprise.
 Comment choisir entre la version payante (15550 dollars, soit aux alentours de 11 000 euros) de Magento Enterprise et la version gratuite Community ?</description>
     </item>
     
